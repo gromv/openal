@@ -1,6 +1,6 @@
 # CMake build file list for OpenAL
 
-CMAKE_MINIMUM_REQUIRED(VERSION 2.4)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
 IF(COMMAND CMAKE_POLICY)
   CMAKE_POLICY(SET CMP0003 NEW)
@@ -34,17 +34,17 @@ OPTION(REQUIRE_NEON "Require ARM Neon CPU extensions" OFF)
 
 
 OPTION(ALSA    "Check for ALSA backend"                ON)
-OPTION(OSS     "Check for OSS backend"                 ON)
-OPTION(SOLARIS "Check for Solaris backend"             ON)
-OPTION(SNDIO   "Check for SndIO backend"               ON)
-OPTION(MMDEVAPI "Check for MMDevApi"                   ON)
-OPTION(DSOUND  "Check for DirectSound backend"         ON)
-OPTION(WINMM   "Check for Windows Multimedia backend"  ON)
-OPTION(PORTAUDIO  "Check for PortAudio backend"        ON)
-OPTION(PULSEAUDIO "Check for PulseAudio backend"       ON)
-OPTION(COREAUDIO  "Check for CoreAudio backend"        ON)
-OPTION(OPENSL     "Check for OpenSL backend"           ON)
-OPTION(WAVE    "Enable Wave Writer backend"            ON)
+OPTION(OSS     "Check for OSS backend"                 OFF)
+OPTION(SOLARIS "Check for Solaris backend"             OFF)
+OPTION(SNDIO   "Check for SndIO backend"               OFF)
+OPTION(MMDEVAPI "Check for MMDevApi"                   OFF)
+OPTION(DSOUND  "Check for DirectSound backend"         OFF)
+OPTION(WINMM   "Check for Windows Multimedia backend"  OFF)
+OPTION(PORTAUDIO  "Check for PortAudio backend"        OFF)
+OPTION(PULSEAUDIO "Check for PulseAudio backend"       OFF)
+OPTION(COREAUDIO  "Check for CoreAudio backend"        OFF)
+OPTION(OPENSL     "Check for OpenSL backend"           OFF)
+OPTION(WAVE    "Enable Wave Writer backend"            OFF)
 
 OPTION(REQUIRE_ALSA       "Require ALSA backend"               OFF)
 OPTION(REQUIRE_OSS        "Require OSS backend"                OFF)
